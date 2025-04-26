@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HTML5 Document</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <!-- Header Section -->
+     <header>
+         <h1>Stace's Document</h1>
+     </header>
+ 
+     <!-- Main Content -->
+     <main>
+         <!-- Ordered List with Roman Numerals -->
+         <section>
+             <h2>CONTENTS</h2>
+             <ol type="I">
+                 <li>Image</li>
+                 <li>Contacts</li>
+                 <li>Registration form</li>
+                 <li>Media</li>
+                 <li>Last</li>
+             </ol>
+         </section>
+ 
+         <!-- External Image from Pexels -->
+         <section>
+             <h2>Featured Image</h2>
+             <figure>
+                 <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg" alt="Mountain landscape" width="600">
+                 <figcaption>Mountain Landscape from Pexels</figcaption>
+             </figure>
+         </section>
+ 
+         <!-- Contact Table -->
+         <section>
+             <h2>Contact List</h2>
+             <table>
+                 <thead>
+                     <tr>
+                         <th>Name</th>
+                         <th>Address</th>
+                         <th>Mobile</th>
+                         <th>Email</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td>Musa Kalama</td>
+                         <td>Sasuma, avenue</td>
+                         <td>07-6123-4567</td>
+                         <td>kalamamusa@gmail.com</td>
+                     </tr>
+                     <tr>
+                         <td>Jane Samak</td>
+                         <td>Sotik, Town</td>
+                         <td>07-3987-6543</td>
+                         <td>janesamak@gmail.com</td>
+                     </tr>
+                     <tr>
+                         <td>Ali Mohamed</td>
+                         <td>Adis , Town</td>
+                         <td>08-5456-7890</td>
+                         <td>alimoha@gmail.com</td>
+                     </tr>
+                     <tr>
+                         <td>Sifa Wilson</td>
+                         <td>Watamu, City</td>
+                         <td>07-9321-1234</td>
+                         <td>sifawilson@gmail.com</td>
+                     </tr>
+                     <tr>
+                         <td>Ember Brenda</td>
+                         <td>Kisumu, Town</td>
+                         <td>07-7654-9876</td>
+                         <td>emberbrenda@gmail.com</td>
+                     </tr>
+                 </tbody>
+             </table>
+         </section>
+ 
+         <!-- Registration Form -->
+         <section>
+             <h2>Registration Form</h2>
+             <form id="registrationForm" novalidate>
+                 <!-- Name Field -->
+                 <label for="name">Full Name:</label>
+                 <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z\s]{2,50}" title="Name should only contain letters and spaces, 2-50 characters">
+                 
+                 <!-- Email Field -->
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                 
+                 <!-- Password Field -->
+                 <label for="password">Password:</label>
+                 <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number, one uppercase and lowercase letter, and at least 8 characters">
+                 
+                 <!-- Date of Birth Field -->
+                 <label for="dob">Date of Birth:</label>
+                 <input type="date" id="dob" name="dob" required max="2025-04-20">
+                 
+                 <!-- Dropdown for Country -->
+                 <label for="country">Country:</label>
+                 <select id="country" name="country" required>
+                     <option value="">Select a country</option>
+                     <option value="tz">Tanzania</option>
+                     <option value="sza">South Africa</option>
+                     <option value="som">Somalia</option>
+                     <option value="ke">Kenya</option>
+                 </select>
+                 
+                 <!-- Radio Buttons for Gender -->
+                 <fieldset>
+                     <legend>Gender:</legend>
+ UNKNOWN:                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                     <label><input type="radio" name="gender" value="female"> Female</label>
+                     <label><input type="radio" name="gender" value="other"> Other</label>
+                 </fieldset>
+                 
+                 <!-- Checkboxes for Interests -->
+                 <fieldset>
+                     <legend>Interests:</legend>
+                     <label><input type="checkbox" name="interests" value="technology"> Technology</label>
+                     <label><input type="checkbox" name="interests" value="music"> Music</label>
+                     <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                 </fieldset>
+                 
+                 <!-- Submit Button -->
+                 <button type="submit">Register</button>
+             </form>
+         </section>
+ 
+         <!-- Multimedia Elements -->
+ <section>
+     <h2>Multimedia</h2>
+    <!-- Audio Element -->
+ <h3>Audio Sample</h3>
+ <audio controls>
+     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+ </audio>
+     <!-- Video Element -->
+     <h3>Nature Video: Aerial Forest View</h3>
+     <video controls width="600">
+         <source src="https://videos.pexels.com/video-files/3209298/3209298-hd_1920_1080_25fps.mp4" type="video/mp4">
+         Your browser does not support the video element.
+     </video>
+     <p>Video source: <a href="https://www.pexels.com/video/aerial-view-of-a-forest-3209298/">Pexels</a>, licensed under Pexels License.</p>
+ </section>
+     </main>
+ 
+     <!-- Footer -->
+     <footer>
+         <p>© 2025 Stace Form. All rights reserved.</p>
+     </footer>
+ 
+     
+ </body>
+ </html>
